@@ -1,27 +1,26 @@
 import React, {useState}from 'react';
 import Categorias  from "./../Categorias";
 
-
 function Menu() {
-    const [idArtculos, setIdArticulos ]= useState(-1);
-    const handleCargarArticulos =function (e){
+    const [idPaises, setIdPaises ]= useState(-1);
+    const handleCargarPaises =function (e){
         const opcion =e.target.value;
         console.log(opcion);
-        setIdArticulos(opcion);
+        setIdPaises(opcion);
     }
   return (
     <div className='row'>
         <div className='col-6'>
             <h3>
-                Categoría
+                Continente
             </h3>
-            <select name="Categorias" id="selCategorias" onClick={handleCargarArticulos}>
+            <select name="Categorias" id="selCategorias" onClick={handleCargarPaises}>
             <option value={-1}> Seleccione una opción</option>
                 {
                     Categorias.map((item, i)=>(
                         <option key={"Categoria"+i} 
                             value={i} >
-                            {item.nombre}
+                            {item.continente}
                         </option>
                     ))
                 }
@@ -29,13 +28,13 @@ function Menu() {
         </div>
 
         <div className='col-6'>
-            <h3>Artículos</h3>
-                <select name="articulos" id="selarticulo">
+            <h3>Países</h3>
+                <select name="Paises" id="selpais">
                 {    
-                          idArtculos  > -1 &&
+                          idPaises  > -1 &&
                           (
-                            Categorias[idArtculos].articulos.map((item,i)=>(
-                                <option key={"articulo"+i} value="">{item}</option>
+                            Categorias[idPaises].paises.map((item,i)=>(
+                                <option key={"pais"+i} value="">{item}</option>
                             ))
                           )
                 }
