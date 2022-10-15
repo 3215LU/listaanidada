@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/listaanidada/static/css/main.073c9b0a.css",
+    "main.js": "/listaanidada/static/js/main.400a0d6c.js",
+    "static/js/787.607f773e.chunk.js": "/listaanidada/static/js/787.607f773e.chunk.js",
+    "index.html": "/listaanidada/index.html",
+    "main.073c9b0a.css.map": "/listaanidada/static/css/main.073c9b0a.css.map",
+    "main.400a0d6c.js.map": "/listaanidada/static/js/main.400a0d6c.js.map",
+    "787.607f773e.chunk.js.map": "/listaanidada/static/js/787.607f773e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.400a0d6c.js"
+  ]
+}
